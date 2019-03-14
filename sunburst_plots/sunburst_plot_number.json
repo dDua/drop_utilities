@@ -1,0 +1,384 @@
+{
+    "name": "questions",
+    "children": [
+        {
+            "name": "field",
+            "children": [
+                {
+                    "name": "goals",
+                    "children": [
+                        {
+                            "name": "did",
+                            "size": 1231
+                        },
+                        {
+                            "name": "were",
+                            "size": 695
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "yards",
+            "children": [
+                {
+                    "name": "was",
+                    "children": [
+                        {
+                            "name": "the",
+                            "size": 1883
+                        }
+                    ]
+                },
+                {
+                    "name": "longer",
+                    "children": [
+                        {
+                            "name": "was",
+                            "size": 437
+                        }
+                    ]
+                },
+                {
+                    "name": "difference",
+                    "size": 814
+                }
+            ]
+        },
+        {
+            "name": "points",
+            "children": [
+                {
+                    "name": "did",
+                    "children": [
+                        {
+                            "name": "the",
+                            "size": 1498
+                        }
+                    ]
+                },
+                {
+                    "name": "were",
+                    "size": 120
+                }
+            ]
+        },
+        {
+            "name": "years",
+            "children": [
+                {
+                    "name": "did",
+                    "children": [
+                        {
+                            "name": "the",
+                            "size": 771
+                        },
+                        {
+                            "name": "it",
+                            "size": 219
+                        }
+                    ]
+                },
+                {
+                    "name": "after",
+                    "children": [
+                        {
+                            "name": "the",
+                            "size": 647
+                        }
+                    ]
+                },
+                {
+                    "name": "passed",
+                    "children": [
+                        {
+                            "name": "between",
+                            "size": 397
+                        }
+                    ]
+                },
+                {
+                    "name": "was",
+                    "size": 159
+                }
+            ]
+        },
+        {
+            "name": "touchdowns",
+            "children": [
+                {
+                    "name": "were",
+                    "children": [
+                        {
+                            "name": "scored",
+                            "size": 466
+                        }
+                    ]
+                },
+                {
+                    "name": "did",
+                    "children": [
+                        {
+                            "name": "the",
+                            "size": 316
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "in",
+            "children": [
+                {
+                    "name": "percent",
+                    "children": [
+                        {
+                            "name": "from",
+                            "size": 299
+                        },
+                        {
+                            "name": "of",
+                            "size": 116
+                        },
+                        {
+                            "name": "werent",
+                            "size": 103
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "percent",
+            "children": [
+                {
+                    "name": "of",
+                    "children": [
+                        {
+                            "name": "people",
+                            "size": 301
+                        },
+                        {
+                            "name": "the",
+                            "size": 102
+                        }
+                    ]
+                },
+                {
+                    "name": "were",
+                    "children": [
+                        {
+                            "name": "not",
+                            "size": 290
+                        }
+                    ]
+                },
+                {
+                    "name": "are",
+                    "children": [
+                        {
+                            "name": "not",
+                            "size": 122
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "touchdown",
+            "children": [
+                {
+                    "name": "were",
+                    "children": []
+                },
+                {
+                    "name": "did",
+                    "children": []
+                },
+                {
+                    "name": "passes",
+                    "children": [
+                        {
+                            "name": "did",
+                            "size": 293
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "more",
+            "children": [
+                {
+                    "name": "people",
+                    "children": [
+                        {
+                            "name": "are",
+                            "size": 187
+                        }
+                    ]
+                },
+                {
+                    "name": "yards",
+                    "children": [
+                        {
+                            "name": "was",
+                            "size": 150
+                        }
+                    ]
+                },
+                {
+                    "name": "housing",
+                    "size": 107
+                }
+            ]
+        },
+        {
+            "name": "total",
+            "children": [
+                {
+                    "name": "points",
+                    "size": 102
+                }
+            ]
+        },
+        {
+            "name": "months",
+            "children": [
+                {
+                    "name": "after",
+                    "children": [
+                        {
+                            "name": "the",
+                            "size": 170
+                        }
+                    ]
+                },
+                {
+                    "name": "did",
+                    "size": 104
+                }
+            ]
+        },
+        {
+            "name": "days",
+            "children": [
+                {
+                    "name": "after",
+                    "children": [
+                        {
+                            "name": "the",
+                            "size": 146
+                        }
+                    ]
+                },
+                {
+                    "name": "did",
+                    "size": 107
+                }
+            ]
+        },
+        {
+            "name": "is",
+            "children": [
+                {
+                    "name": "the",
+                    "children": [
+                        {
+                            "name": "difference",
+                            "size": 244
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "passes",
+            "children": [
+                {
+                    "name": "the",
+                    "size": 237
+                }
+            ]
+        },
+        {
+            "name": "of",
+            "children": [
+                {
+                    "name": "the",
+                    "size": 232
+                }
+            ]
+        },
+        {
+            "name": "times",
+            "children": [
+                {
+                    "name": "did",
+                    "children": [
+                        {
+                            "name": "the",
+                            "size": 125
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "wins",
+            "children": [
+                {
+                    "name": "did",
+                    "children": [
+                        {
+                            "name": "the",
+                            "size": 132
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "interceptions",
+            "children": [
+                {
+                    "name": "did",
+                    "size": 147
+                }
+            ]
+        },
+        {
+            "name": "rushing",
+            "children": [
+                {
+                    "name": "did",
+                    "size": 118
+                }
+            ]
+        },
+        {
+            "name": "games",
+            "children": [
+                {
+                    "name": "had",
+                    "children": [
+                        {
+                            "name": "the",
+                            "size": 105
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "losses",
+            "children": [
+                {
+                    "name": "had",
+                    "size": 108
+                }
+            ]
+        }
+    ]
+}
