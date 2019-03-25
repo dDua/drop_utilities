@@ -12,7 +12,6 @@
             cursor: pointer;
             stroke-width: 1.8;
             stroke: black;
-            opacity: 0.35;
         }
 
         circle {
@@ -29,7 +28,7 @@
 
         html {
             font-family: "Open Sans";
-            font-size: 12px
+            font-size: 12px;
         }
     </style>
     <script src="https://d3js.org/d3.v3.min.js"></script>
@@ -55,7 +54,6 @@
         sinebow = ["#ff4040","#e78d0b","#a7d503","#58fc2a","#18f472","#00bfbf","#1872f4","#582afc","#a703d5","#e70b8d","#ff4040"];
         spectral = ["#9e0142","#d53e4f","#f46d43","#fdae61","#fee08b","#ffffbf","#e6f598","#abdda4","#66c2a5","#3288bd","#5e4fa2"];
         viridis = ["#440154","#482475","#414487","#355f8d","#2a788e","#21918c","#22a884","#44bf70","#7ad151","#bddf26","#fde725"];
-        var color = d3.scaleOrdinal(spectral);
 
         var partition = d3.partition();
 
@@ -75,11 +73,27 @@
         var text,
             path;
 
-        var threshold = 110; // put 110 for sunburst_plot_number.json, 0 for span
-        d3.json("sunburst_plot_number.json", function (error, root) {
+        function find_parent(node) {
+            return node.depth==1? node : find_parent(node.parent);
+        }
+
+        ptype = "span";
+        if (ptype=="number") {
+            var filename = "sunburst_plot_number.json";
+            var threshold = 120;
+            function font_size(d) { return 4.75*Math.log10(d.value) + "px"; }
+            var color = d3.scaleOrdinal(rainbow);
+        } else {
+            var filename = "sunburst_plot_span.json";
+            var threshold = 0;
+            function font_size(d) { return 5.25*Math.log10(d.value) + "px"; }
+            var color = d3.scaleOrdinal(rainbow);
+        }
+        d3.json(filename, function (error, root) {
             if (error) throw error;
 
             root = d3.hierarchy(root);
+            console.log(root);
             root.sum(function (d) { return d.size; });
 
             svg.selectAll("path")
@@ -89,7 +103,8 @@
             path = svg.selectAll(".node")
                 .append("path")
                 .attr("d", arc)
-                .style("fill", function (d) { return (d.data.name == "" || d.data.name == "how many")? "#ffffff" : color(d.data.name); }) //(d.children ? d : d.parent).data.name); })
+                .style("opacity", function(d) { return d.value<threshold? 0:0.25;})
+                .style("fill", function (d) { return (d.depth == 0 || d.value<threshold)? "#ffffff" : color(find_parent(d).data.name); }) //(d.data.name); }) //
                 .on("click", click);
 
             text = svg.selectAll(".node")
@@ -98,10 +113,11 @@
                     return "rotate(" + computeTextRotation(d) + ")";
                 })
                 .attr("x", function (d) {
-                    return d.depth==0? y(d.y0)-25: y(d.y0);
+                    return d.depth==0? y(d.y0)-50: y(d.y0);
                 })
                 .attr("dx", "5") // margin
                 .attr("dy", ".35em") // vertical-align
+                .attr("font-size", font_size)
                 .text(function (d) { return d.value>threshold? d.data.name : ""; });
         });
 
