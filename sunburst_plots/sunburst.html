@@ -118,7 +118,7 @@
                 .attr("dx", "5") // margin
                 .attr("dy", ".35em") // vertical-align
                 .attr("font-size", font_size)
-                .text(function (d) { return d.value>threshold? d.data.name : ""; });
+                .text(function (d) { return d.value>=threshold? d.data.name : ""; });
         });
 
         function click(d) {
